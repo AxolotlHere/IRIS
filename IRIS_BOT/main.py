@@ -27,8 +27,8 @@ async def on_ready():
 
 @bot.command(name='meme')
 async def meme(ctx):
-    reddit_instance = praw.Reddit(client_id="-pSPiKAER-EyCsC8pdEfxg", client_secret="Q-Mf5eNG2O_tllof1rmkSgmr1ccEZw",
-                                  user_agent="/u/Spectrum_py")
+    reddit_instance = praw.Reddit(client_id="<client_id>", client_secret="<client-secret>",
+                                  user_agent="<username>")
     sub_reddit = reddit_instance.subreddit("memes").new(limit=25)
     meme_list = []
     for memes in sub_reddit:
@@ -165,4 +165,4 @@ async def on_message(message):
         await message.channel.send("My guess are : " + str(maybe_list_2))
 
 
-bot.run("OTE1MjU1NDUwMzgxOTc5NjU4.YaY8Dw.kn6DHjKeTqPDPOgkC-B7tokkSY0")
+bot.run("<token>")
