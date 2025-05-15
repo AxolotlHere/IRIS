@@ -1,6 +1,6 @@
 import praw
 
-reddit_instance = praw.Reddit(client_id = "-pSPiKAER-EyCsC8pdEfxg",client_secret="Q-Mf5eNG2O_tllof1rmkSgmr1ccEZw",user_agent="/u/Spectrum_py")
+reddit_instance = praw.Reddit(client_id = "<client_id>",client_secret="<client_secret>",user_agent="/u/<username>")
 
 sub_reddit = reddit_instance.subreddit("memes").top(limit=25)
 meme_list = []
