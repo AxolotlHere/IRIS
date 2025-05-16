@@ -56,7 +56,7 @@ async def uncle(ctx):
 @bot.command(name="surprise")
 async def surprise(ctx):
     rickroll_title = "**Guess what I have for you !!!**"
-    await ctx.send(file=discord.File(r"C:\Users\Kavide\IRIS_BOT\surprise.mp4"),content=rickroll_title)
+    await ctx.send(file=discord.File(r"surprise.mp4"),content=rickroll_title)
 
 @bot.command(name="wish")
 async def wishes(ctx,what_they_say):
